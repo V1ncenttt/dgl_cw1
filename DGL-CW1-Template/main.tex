@@ -1,0 +1,263 @@
+\documentclass[a4paper,12pt]{article}
+
+% Package imports
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[title]{appendix}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{manyfoot}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{setspace}
+
+% Page formatting
+\geometry{a4paper, margin=1in}
+% \setstretch{1.5}
+
+% Custom colors
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{blue-green}{rgb}{0.0, 0.87, 0.87}
+\definecolor{deeplilac}{rgb}{0.6, 0.33, 0.73}  
+\definecolor{lightcarminepink}{rgb}{0.9, 0.4, 0.38}
+\definecolor{ix}{rgb}{0.89, 0.15, 0.42}
+\definecolor{parisgreen}{rgb}{0.31, 0.78, 0.47}
+\definecolor{mauve}{rgb}{0.88, 0.69, 1.0}
+\definecolor{lightpastelpurple}{rgb}{0.69, 0.61, 0.85}
+
+\renewcommand*{\thesubsubsection}{\thesubsection.\alph{subsubsection}}
+
+
+\begin{document}
+% Title page formatting
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries DGL 2025 Coursework 1 \par}
+    \vspace{1.5cm}
+    {\Large\bfseries Name Surname \par}
+    \vspace{0.5cm}
+    {\large CID: XXX \quad \texttt{username@ic.ac.uk} \par}
+    \vspace{1.5cm}
+    {\large Department of Computing \par}
+    {\large Imperial College London \par}
+    \vfill
+    {\large \today \par}
+\end{titlepage}
+
+
+% Abstract section
+\begin{abstract}
+\noindent\textbf{Instructions:} This is a structured report template for your DGL 2025 coursework. Please insert your written answers, discussions, and figures in the designated sections. \textbf{Do not include any code} in this report. All code should remain in your Jupyter notebooks.
+
+\noindent\textbf{Note:} We have \textbf{kept the structure the same as the Coursework Description PDF} to maintain consistency across your notebooks and this report template. Please keep your headings and subheadings aligned with those in the provided instructions. However, if a section primarily relates to code implementation, you may keep your answers concise (e.g., reference your notebook or provide brief clarifications).
+\end{abstract}
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Graph Classification}\label{sec:graph-classification}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Graph-Level Aggregation and Training}
+\subsubsection{Graph-Level GCN}
+
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Graph-Level Training}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Training vs. Evaluation F1}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Analyzing the Dataset}
+\subsubsection{Plotting}
+
+INSERT YOUR ANSWER HERE
+
+
+
+
+\subsubsection{Discussion}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Overcoming Dataset Challenges}
+
+\subsubsection{Adapting the GCN}
+
+INSERT YOUR ANSWER HERE
+
+
+
+\subsubsection{Improving the Model}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Evaluating the Best Model}
+
+\subsubsection{Final Analysis and Explanation}
+
+INSERT YOUR ANSWER HERE
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Node Classification in a Heterogeneous Graph}\label{sec:node-classification-hetero}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Dataset}
+
+\subsubsection{Problem Challenge}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Real-World Analogy}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Interpretation of the Dataset: Plotting the Graph}
+
+INSERT YOUR ANSWER HERE
+
+
+
+\subsubsection{Interpretation of the Dataset: Plotting the Node Feature Distributions}
+
+INSERT YOUR ANSWER HERE
+
+
+
+\subsubsection{Interpretation of the Dataset: Discussion}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Naive Solution: Padding}
+
+\subsubsection{Limitations of Naive Solution}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Node-Type Aware GCN}
+
+\subsubsection{Implementation}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Discussion}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Exploring Attention}
+
+\subsubsection{Implementation}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Discussion}
+
+INSERT YOUR ANSWER HERE
+
+
+
+\subsection{Overall Discussion}
+
+INSERT YOUR ANSWER HERE
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Investigating Topology in Node-Based Classification Using GNNs}\label{sec:topology-node-classification}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Analyzing the Graphs}
+
+\subsubsection{Topological and Geometric Measures}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Visualizing and Comparing Topological and Geometric Measures of Two Graphs}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Visualizing the Graphs}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Visualizing Node Feature Distributions}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Evaluating GCN Performance on Different Graph Structures}
+
+\subsubsection{Implementation of Layered GCN}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Plotting of t-SNE Embeddings}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Training the Model on Merged Graphs $G_1 \cup G_2$}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Joined vs. Independent Training}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsection{Topological Changes to Improve Training}
+
+\subsubsection{Plot the Ricci Curvature for Each Edge}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Investigate Extreme Case Topologies}
+
+INSERT YOUR ANSWER HERE
+
+
+\subsubsection{Improving Graph Topology for Better Learning}
+
+INSERT YOUR ANSWER HERE
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{bibliography}
+
+\end{document}
